@@ -7,7 +7,7 @@
   <body>
   <header>
     <nav>
-	<img src="img/logo-sedona.svg" width="140" height="72" alt="logo-sedona"/> 
+	<img src="img/logo-sedona.svg" width="140" height="72" alt="logo-sedona"/>
       <ul>
         <li><a href="#">Информация </a></li>
         <li><a href="#">Фото и видео </a></li>
@@ -35,23 +35,40 @@
       </p>
     </section>
 	<section>
-	<h2> Поиск гостиницы</h2>
+	<h2> Поиск гостиницы в Седоне</h2>
+    <form class="user" method="post"
+          action="https://echo.htmlacademy.ru"></form>
 	 <p>
-        Дата заезда: <time datetime="2017-04-24">24 апреля 2017</time>
+     <label for="data-zaezda">Дата заезда:</label>
+     <input id="data-zaezda" type="text" name="data" placeholder="24 апреля 2017">
 		<img src="img/calendar.svg" width="21" height="22" alt="calendar">
       </p>
-      <p>Дата выезда: <time datetime="2017-07-04">4 июля 2017</time>
+      <p>
+        <label for="data-vyezda">Дата выезда:</label>
+        <input id="data-vyezda" type="text" name="data" placeholder="4 июля 2017">
 	  <img src="img/calendar.svg" width="21" height="22" alt="calendar">
 	  </p>
+    <p>
+      <label for="vzroslye">Взрослые:</label>
+      <button type="button" aria-label="Убрать">-</button>
+      <input id="vzroslye" type="text" name="kollichestvo" placeholder="2">
+      <button type="button" aria-label="Добавить">+</button>
+    </p>
+    <p>
+      <label for="deti">Дети:</label>
+      <button type="button" aria-label="Убрать">-</button>
+      <input id="deti" type="text" name="kollichestvo" placeholder="0">
+      <button type="button" aria-label="Добавить">+</button>
+    </p>
+
       <p>
-        Взрослые: <span>2</span> Дети: <span>0</span>
         <button type="button">Найти</button>
       </p>
 	</section>
   </main>
 <footer>
  <p>
- #Visitsedonna 
+ #Visitsedonna
  </p>
      <div>
       <ul>
@@ -63,7 +80,7 @@
     <p>
 	Website by
 	<a href="#"><img src="img/logo-htmlacademy.svg" width="100" height="90" alt="html academy logo"></a>
-	
+
     </p>
 </footer>
   </body>
