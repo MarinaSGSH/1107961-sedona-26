@@ -1,88 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Седона</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  <header class="main-header container">
-    <nav class="navigation">
-	<div class="navigation-wrapper">
-	<img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="logo-sedona"/>
+<head>
+  <meta charset="UTF-8">
+  <title>Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="main-header container">
+  <nav class="navigation">
+    <div class="navigation-wrapper">
+      <img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="logo-sedona"/>
       <ul class="navigation-list">
         <li><a href="#">Информация </a></li>
         <li><a href="#">Фото и видео </a></li>
         <li><a href="#">Карта штата </a></li>
         <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
-	  </div>
-    </nav>
-  </header>
-  <main class="container main-background">
-    <section class="section-content">
-	<img class="img-welcome" src="img/welcome.png" width="459" height="353" alt="Welcome to the gorgeus Sedona">
-      <img src="img/polygon.png" class="img-polygon" width="1201" height="59" alt="">
-	</section>
-<section class="description-section">
-  <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!
-  </h1>
-  <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-</section>
-    <div class="desc-div">
-      <h2> Заинтересовались?</h2>
-      <p>
-        Укажите предполагаемые даты поездки,
-        и мы покажем вам лучшие предложения гостиниц в Седоне
-      </p>
     </div>
-<section class="search">
-  <h2> Поиск гостиницы в Седоне</h2>
-<form class="" method="post"
-  action="https://echo.htmlacademy.ru">
-<div>
-   <label for="arrival-date">Дата заезда:</label>
-    <input id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
-    <img src="img/calendar.svg" width="21" height="22" alt="">
-</div>
-<div>
-   <label for="date-of-departure">Дата выезда:</label>
-   <input id="date-of-departure" type="text" name="data" placeholder="4 июля 2017">
-   <img src="img/calendar.svg" width="21" height="22" alt="">
-</div>
-<div>
-   <label for="adults">Взрослые:</label>
-   <button type="button" aria-label="Убрать">-</button>
-   <input id="adults" type="text" name="quantity-adults" placeholder="2">
-     <button type="button" aria-label="Добавить">+</button>
-</div>
-<div>
-   <label for="children">Дети:</label>
-   <button type="button" aria-label="Убрать">-</button>
-   <input id="children" type="text" name="quantity-children" placeholder="0">
-   <button type="button" aria-label="Добавить">+</button>
-</div>
-     <button type="submit">Найти</button>
-</form>
-</section>
-  </main>
-<footer class="container footer">
-
- <p class="hashtag">
- #Visitsedona
- </p>
-    <ul class="contacts-list">
-      <li><a class="link-icn" href="#"><img src="img/twitter.svg" width="17" height="15" alt="twitter"> </a></li>
-      <li><a class="link-icn" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-      <li><a class="link-icn" href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a></li>
-    </ul>
-    <p class="link-signature">
-	Website by
-	<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="100" height="90" alt="html academy logo"></a>
-
+  </nav>
+</header>
+<main class="container main-background">
+  <section class="section-content">
+    <img class="img-welcome" src="img/welcome.png" width="459" height="353" alt="Welcome to the gorgeus Sedona">
+    <img src="img/polygon.png" class="img-polygon" width="1201" height="59" alt="">
+  </section>
+  <section class="description-section">
+    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!
+    </h1>
+    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+  </section>
+  <div class="desc-div">
+    <h2> Заинтересовались?</h2>
+    <p>
+      Укажите предполагаемые даты поездки,
+      и мы покажем вам лучшие предложения гостиниц в Седоне
     </p>
+  </div>
+  <section class="search">
+    <h2> Поиск гостиницы в Седоне</h2>
+    <form class="" method="post"
+          action="https://echo.htmlacademy.ru">
+      <div>
+        <label for="arrival-date">Дата заезда:</label>
+        <input id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
+        <img src="img/calendar.svg" width="21" height="22" alt="">
+      </div>
+      <div>
+        <label for="date-of-departure">Дата выезда:</label>
+        <input id="date-of-departure" type="text" name="data" placeholder="4 июля 2017">
+        <img src="img/calendar.svg" width="21" height="22" alt="">
+      </div>
+      <div>
+        <label for="adults">Взрослые:</label>
+        <button type="button" aria-label="Убрать">-</button>
+        <input id="adults" type="text" name="quantity-adults" placeholder="2">
+        <button type="button" aria-label="Добавить">+</button>
+      </div>
+      <div>
+        <label for="children">Дети:</label>
+        <button type="button" aria-label="Убрать">-</button>
+        <input id="children" type="text" name="quantity-children" placeholder="0">
+        <button type="button" aria-label="Добавить">+</button>
+      </div>
+      <button type="submit">Найти</button>
+    </form>
+  </section>
+</main>
+<footer class="container footer">
+  <p class="hashtag">
+    #Visitsedona
+  </p>
+  <ul class="contacts-list">
+    <li><a class="link-icn" href="#"><img src="img/twitter.svg" width="17" height="15" alt="twitter"> </a></li>
+    <li><a class="link-icn" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+    <li><a class="link-icn" href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a></li>
+  </ul>
+  <p class="link-signature">
+    Website by
+    <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="100" height="90" alt="html academy logo"></a>
+  </p>
 </footer>
-  </body>
+</body>
 </html>
