@@ -110,6 +110,7 @@ font-weight: bold;
 text-align: center;
   font-size: .7rem;
   line-height: 120%;
+  white-space: pre;
 }
 
 .desc-div {
@@ -225,4 +226,20 @@ list-style-type: none;
 .rating {
 position: absolute;
 right: 80px;
+}
+
+
+.search{
+  display: flex;
+  border: 1px solid red;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search h2{
+	background-color: #766357;
+	color: #ffffff;
+	font-size: 21px;
+	
+	
 }
