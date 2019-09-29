@@ -100,7 +100,7 @@ a {
 }
 
 .desc-div h2 {
-  font-size: 1.5rem;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   margin: 58px;
@@ -109,7 +109,7 @@ a {
 
 .desc-div p {
   text-align: center;
-  font-size: .7rem;
+  font-size: 14px;
   line-height: 120%;
   white-space: pre;
 }
@@ -241,7 +241,7 @@ a {
 
 .title-search  {
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 21px;
 	font-weight: bold;
 	background-color: #766357; 
 	text-align: center;  
@@ -349,10 +349,61 @@ a {
 } 
 
 .quantity-counter input{
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .quantity-counter button {
 	color: #a9a9a9;
+}
+
+.navigation-list a:hover {
+	color: #81b3d2;
+}
+
+.navigation-list a:active {
+	color: #cacaca;
+}
+
+.navigation-list a:visited {
+	color: #766357;
+}
+
+a .title-name:hover {
+	color: #669ec0;
+}
+
+a .title-name:active {
+	color: #cacaca;
+}
+
+
+.link-more:hover {
+	background-color: #669ec0;
+}
+
+.link-more:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.link-book:hover {
+	background-color: #604e43;
+}
+
+.link-book:active {
+	background-color: #503e33;
+	color: #8f8681;
+}
+	
+.search a {
+	width: 100%;
+}
+
+.title-search:hover {
+	background-color: #604e43;
+}
+
+.title-search:active {
+	background-color: #604e43;
+	color: #928a85;
 }
