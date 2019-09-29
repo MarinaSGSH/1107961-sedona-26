@@ -403,3 +403,30 @@ a .title-name:active {
   background-color: #604e43;
   color: #928a85;
 }
+
+.input-date:hover {
+	background-color: #ebebeb;
+}
+
+.input-date:focus {
+	outline: none;
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5 !important;
+}
+
+.button-type-submit:hover{
+	background-color: #669ec0;	
+}
+.button-type-submit:active {
+	background-color: #5496bd;
+	color: #94b9d2;
+}
+
+.link-icn:hover {
+	background-color: #669ec0;
+}
+
+
+.img-svg:active {
+  opacity: .3;
+}
