@@ -8,6 +8,8 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ececec;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -63,7 +65,7 @@ a {
 .section-content {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  height: 505px;
+  min-height: 505px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,10 +90,10 @@ a {
 
 }
 
-h1 {
+.title-h1 {
   font-size: 1rem;
   font-weight: bold;
-  line-height: 120%;
+  line-height: 1.2;
   text-align: center;
   margin: 0 25px;
   margin-bottom: 40px;
@@ -124,13 +126,10 @@ h1 {
   color: #000000;
 }
 
-a .title-name {
-  list-style-type: none;
-}
 
 .contacts-list li {
   background-color: #81b3d2;
-  min-height: 56px;
+  height: 48px;
   width: 48px;
   margin: 0 3px;
 }
@@ -168,7 +167,7 @@ a .title-name {
 
 .footer {
   background-color: #ffffff;
-  height: 120px;
+  padding: 38px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -231,25 +230,25 @@ a .title-name {
 }
 
 .search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 568px;
-    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 568px;
+	margin: 0 auto 20px;
 	box-shadow:0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
 }
 
 
 .title-search  {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  background-color: #766357; 
-text-align: center;  
-padding-top: 35px;
-padding-bottom: 37px;
-width: 100%;
-margin: 0;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #766357; 
+	text-align: center;  
+	padding-top: 35px;
+	padding-bottom: 37px;
+	width: 100%;
+	margin: 0;
 }  
 
 .form  {
@@ -299,12 +298,16 @@ margin: 0;
 .adults{
   font-weight: bold;
   padding-top: 55px;
-  padding-right: 55px;
 }
 
 .children {
+	flex-grow: 1;
   font-weight: bold;
   padding-top: 55px;
+}
+
+.children .quantity-counter{
+	margin-left: auto;
 }
 
 .adults-children {
@@ -314,9 +317,15 @@ margin: 0;
 
 
 .button-type-submit {
-	padding-top: 69px;
+	margin-top: 56px;
 	font-size: 15px;
 	font-weight: bold;
+	background-color: #81b3d2;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 22px;
+	border: none;
+	
 }
 
 .adults, .children {
@@ -330,11 +339,20 @@ margin: 0;
 	background-color: #f2f2f2;
 	height: 38px;
     font-weight: bold;
-    padding-left: 13px;
 }
 
 .quantity-counter button, .quantity-counter input {
 	width: 38px;
 	border: none;
     background: none;
+	font-weight: bold;
 } 
+
+.quantity-counter input{
+	text-align: center;
+	
+}
+
+.quantity-counter button {
+	color: #a9a9a9;
+}
