@@ -82,21 +82,16 @@ a {
 
 .description-section {
   background-color: #ffffff;
-  width: 490px;
-  min-height: 216px;
-  margin: 0 auto;
-  padding-top: 64px;
-
-
+  text-align: center;
+  padding: 65px 0 60px;
 }
 
 .title-h1 {
+  width: 440px;
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.2;
-  text-align: center;
-  margin: 0 25px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 .desc-div h2 {
@@ -116,7 +111,7 @@ a {
 
 .desc-div {
   width: 420px;
-  min-height: 540px;
+  padding: 58px 0;
   margin: 0 auto;
 }
 
@@ -230,28 +225,28 @@ a {
 }
 
 .search {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 568px;
-	margin: 0 auto 20px;
-	box-shadow:0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 568px;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
 
-.title-search  {
-	color: #ffffff;
-	font-size: 21px;
-	font-weight: bold;
-	background-color: #766357; 
-	text-align: center;  
-	padding-top: 35px;
-	padding-bottom: 37px;
-	width: 100%;
-	margin: 0;
-}  
+.title-search {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  background-color: #766357;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 37px;
+  width: 100%;
+  margin: 0;
+}
 
-.form  {
+.form {
   margin-top: 0;
   width: 569px;
   min-height: 396px;
@@ -269,19 +264,20 @@ a {
   align-items: center;
 }
 
-.input-date{
-	border: none;
-    background-color: #f2f2f2;
-    height: 38px;
-    font-weight: bold;
-    padding-left: 13px;
-	background-image: url(../img/calendar.svg);
-	background-repeat: no-repeat;
-	background-position: center right 3px;
-	padding-right: 30px;
-	flex-grow: 1;
+.input-date {
+  border: none;
+  background-color: #f2f2f2;
+  height: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+  padding-left: 13px;
+  background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center right 3px;
+  padding-right: 30px;
+  flex-grow: 1;
 }
-
 
 
 .date-of-departure {
@@ -292,22 +288,22 @@ a {
 }
 
 .label-date {
-	width: 115px;
+  width: 115px;
 }
 
-.adults{
+.adults {
   font-weight: bold;
   padding-top: 55px;
 }
 
 .children {
-	flex-grow: 1;
+  flex-grow: 1;
   font-weight: bold;
   padding-top: 55px;
 }
 
-.children .quantity-counter{
-	margin-left: auto;
+.children .quantity-counter {
+  margin-left: auto;
 }
 
 .adults-children {
@@ -317,93 +313,93 @@ a {
 
 
 .button-type-submit {
-	margin-top: 56px;
-	font-size: 15px;
-	font-weight: bold;
-	background-color: #81b3d2;
-	color: #ffffff;
-	text-transform: uppercase;
-	padding: 22px;
-	border: none;
-	
+  margin-top: 56px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 22px;
+  border: none;
+
 }
 
 .adults, .children {
-	display: flex;
-	flex-grow: 1;
-	align-items: center;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .quantity-counter {
-	display: flex;
-	background-color: #f2f2f2;
-	height: 38px;
-    font-weight: bold;
+  display: flex;
+  background-color: #f2f2f2;
+  height: 38px;
+  font-weight: bold;
 }
 
 .quantity-counter button, .quantity-counter input {
-	width: 38px;
-	border: none;
-    background: none;
-	font-weight: bold;
-} 
+  width: 38px;
+  border: none;
+  background: none;
+  font-weight: bold;
+}
 
-.quantity-counter input{
-	text-align: center;	
+.quantity-counter input {
+  text-align: center;
 }
 
 .quantity-counter button {
-	color: #a9a9a9;
+  color: #a9a9a9;
 }
 
 .navigation-list a:hover {
-	color: #81b3d2;
+  color: #81b3d2;
 }
 
 .navigation-list a:active {
-	color: #cacaca;
+  color: #cacaca;
 }
 
 .navigation-list a:visited {
-	color: #766357;
+  color: #766357;
 }
 
 a .title-name:hover {
-	color: #669ec0;
+  color: #669ec0;
 }
 
 a .title-name:active {
-	color: #cacaca;
+  color: #cacaca;
 }
 
 
 .link-more:hover {
-	background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .link-more:active {
-	background-color: #5496bd;
-	color: #94b9d2;
+  background-color: #5496bd;
+  color: #94b9d2;
 }
 
 .link-book:hover {
-	background-color: #604e43;
+  background-color: #604e43;
 }
 
 .link-book:active {
-	background-color: #503e33;
-	color: #8f8681;
+  background-color: #503e33;
+  color: #8f8681;
 }
-	
+
 .search a {
-	width: 100%;
+  width: 100%;
 }
 
 .title-search:hover {
-	background-color: #604e43;
+  background-color: #604e43;
 }
 
 .title-search:active {
-	background-color: #604e43;
-	color: #928a85;
+  background-color: #604e43;
+  color: #928a85;
 }
