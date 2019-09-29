@@ -39,32 +39,40 @@
     </p>
   </div>
   <section class="search">
-    <h2> Поиск гостиницы в Седоне</h2>
-    <form class="" method="post"
+    <h2 class="title-search"> Поиск гостиницы в Седоне</h2>
+    <form class="form" method="post"
           action="https://echo.htmlacademy.ru">
-      <div>
-        <label for="arrival-date">Дата заезда:</label>
-        <input id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
-        <img src="img/calendar.svg" width="21" height="22" alt="">
+		  <div class="group-of-forms">
+      <div class="arrival-date">
+        <label class="label-date" for="arrival-date">Дата заезда:</label>
+        <input class="input-date" id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
       </div>
-      <div>
-        <label for="date-of-departure">Дата выезда:</label>
-        <input id="date-of-departure" type="text" name="data" placeholder="4 июля 2017">
-        <img src="img/calendar.svg" width="21" height="22" alt="">
+      <div class="date-of-departure">
+        <label class="label-date" for="date-of-departure">Дата выезда:</label>
+        <input class="input-date" id="date-of-departure" type="text" name="data" placeholder="4 июля 2017">
       </div>
-      <div>
-        <label for="adults">Взрослые:</label>
+	  <div class="adults-children">
+      <div class="adults">
+        <label class="label-date" for="adults">Взрослые:</label>
+		<div class="quantity-counter">
         <button type="button" aria-label="Убрать">-</button>
         <input id="adults" type="text" name="quantity-adults" placeholder="2">
         <button type="button" aria-label="Добавить">+</button>
+		</div>
       </div>
-      <div>
-        <label for="children">Дети:</label>
+      <div class="children">
+        <label class="label-date" for="children">Дети:</label>
+		<div class="quantity-counter">
         <button type="button" aria-label="Убрать">-</button>
         <input id="children" type="text" name="quantity-children" placeholder="0">
         <button type="button" aria-label="Добавить">+</button>
+		</div>
       </div>
+	  </div>
+	  <div class="button-type-submit">
       <button type="submit">Найти</button>
+	  </div>
+	  </div>
     </form>
   </section>
 </main>
