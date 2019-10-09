@@ -8,68 +8,106 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="main-header container">
-  <nav class="navigation">
-    <div class="navigation-wrapper">
-      <a href="index.html"><img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="logo-sedona"/></a>
-      <ul class="navigation-list">
-        <li><a href="#">Информация </a></li>
-        <li><a href="#">Фото и видео </a></li>
-        <li><a href="#">Карта штата </a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
+  <header class="main-header container">
+    <nav class="navigation">
+      <div class="navigation-wrapper">
+        <a href="index.html"><img class="logo" src="img/logo-sedona.svg" width="140" height="72"
+            alt="logo-sedona" /></a>
+        <ul class="navigation-list">
+          <li><a href="#">Информация </a></li>
+          <li><a href="#">Фото и видео </a></li>
+          <li><a href="#">Карта штата </a></li>
+          <li><a class="catalog-active" href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container main-background">
+      <section class="filter">
+        <div class="infrastructure"> 
+          <div class="infrastructure-wraper">
+          <span class="infrastructure-title">Инфраструктура</span>
+          <ul>
+            <li class="li-2">Бассейн</li>
+            <li class="li-2">Парковка</li>
+            <li class="li-2">WI-FI</li>
+          </ul>
+        </div>
+        <div class="infrastructure-wraper">
+        <span class="infrastructure-title">Тип жилья</span>
+        <ul>
+            <li class="li-2">Гостиница</li>
+            <li class="li-2">Мотель</li>
+            <li class="li-2">Апартаменты</li>
+          </ul>
+        </div>
+        </div>
+<div class="infrastructure">
+<h2>Стоимость в сутки (р):<h2>
+  <span> от 0 </span>
+  <span> до 3000 </span>
+  <span></span>
+  <button class="show" type="button" aria-label="Показать"></button>
+</div>
+        </section>
+    <section class="item-hotels">
+      <ul class="list-hotel-description">
+        <li class="li-item">
+          <img class="hotel-img" src="img/amara.jpg" width="135" height="90" alt="Amara resort & spa">
+          <div class="hotel-info">
+            <a href="#">
+              <h2 class="title-name"> Amara resort & spa</h2>
+            </a>
+            <p class="price">Гостиница от 4000 р.</p>
+            <a class="link-more" href="#">Подробнее</a>
+            <a class="link-book" href="#">Забронировать</a>
+            <span class="rating">Рейтинг: 8,5</span>
+          </div>
+        </li>
+        <li class="li-item">
+          <img class="hotel-img" src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
+          <div class="hotel-info">
+            <a href="#">
+              <h2 class="title-name">Desert quail inn</h2>
+            </a>
+            <p class="price">Мотель от 3000 р.</p>
+            <a class="link-more" href="#">Подробнее</a>
+            <a class="link-book" href="#">Забронировать</a>
+            <span class="rating">Рейтинг: 8,9</span>
+          </div>
+        </li>
+        <li class="li-item">
+          <img class="hotel-img" src="img/villast.jpg" width="135" height="90" alt="Villas at poco diablo">
+          <div class="hotel-info">
+            <a href="#">
+              <h2 class="title-name">Villas at poco diablo</h2>
+            </a>
+            <p class="price">Апартаменты от 2000 р.</p>
+            <a class="link-more" href="#">Подробнее</a>
+            <a class="link-book" href="#">Забронировать</a>
+            <span class="rating">Рейтинг: 9,2</span>
+          </div>
+        </li>
       </ul>
-    </div>
-  </nav>
-</header>
-<main class="container main-background">
-  <section class="item-hotels">
-    <ul class="list-hotel-description">
-      <li class="li-item">
-        <img class="hotel-img" src="img/amara.jpg" width="135" height="90" alt="Amara resort & spa">
-        <div class="hotel-info">
-          <a href="#"><h2 class="title-name"> Amara resort & spa</h2></a>
-          <p class="price">Гостиница от 4000 р.</p>
-          <a class="link-more" href="#">Подробнее</a>
-          <a class="link-book" href="#">Забронировать</a>
-          <span class="rating">Рейтинг: 8,5</span>
-        </div>
-      </li>
-      <li class="li-item">
-        <img class="hotel-img" src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
-        <div class="hotel-info">
-          <a href="#"><h2 class="title-name">Desert quail inn</h2></a>
-          <p class="price">Мотель от 3000 р.</p>
-          <a class="link-more" href="#">Подробнее</a>
-          <a class="link-book" href="#">Забронировать</a>
-          <span class="rating">Рейтинг: 8,9</span>
-        </div>
-      </li>
-      <li class="li-item">
-        <img class="hotel-img" src="img/villast.jpg" width="135" height="90" alt="Villas at poco diablo">
-        <div class="hotel-info">
-          <a href="#"><h2 class="title-name">Villas at poco diablo</h2></a>
-          <p class="price">Апартаменты от 2000 р.</p>
-          <a class="link-more" href="#">Подробнее</a>
-          <a class="link-book" href="#">Забронировать</a>
-          <span class="rating">Рейтинг: 9,2</span>
-        </div>
-      </li>
-    </ul>
-  </section>
-</main>
-<footer class="container footer">
-  <p class="hashtag">
-    #Visitsedona
-  </p>
-  <ul class="contacts-list">
-    <li><a class="link-icn" href="#"><img src="img/twitter.svg" width="17" height="15" alt="twitter"> </a></li>
-    <li><a class="link-icn" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
-    <li><a class="link-icn" href="#"><img src="img/youtube.svg" width="20" height="16" alt="youtube"></a></li>
-  </ul>
-  <p class="link-signature">
-    Website by
-    <a class="logo-color" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-  </p>
-</footer>
+    </section>
+  </main>
+  <footer class="container footer">
+      <p class="hashtag">
+        #Visitsedona
+      </p>
+      <ul class="contacts-list">
+        <li><a class="link-icn" href="#"><img class="img-svg" src="img/twitter.svg" width="17" height="15" alt="twitter">
+          </a></li>
+        <li><a class="link-icn" href="#"><img class="img-svg" src="img/fb-icon.svg" width="12" height="22"
+              alt="facebook"></a></li>
+        <li><a class="link-icn" href="#"><img class="img-svg" src="img/youtube.svg" width="20" height="16"
+              alt="youtube"></a></li>
+      </ul>
+      <p class="link-signature">
+        Website by
+        <a class="logo-color" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+      </p>
+    </footer>
 </body>
 </html>
