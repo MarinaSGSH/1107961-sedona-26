@@ -94,20 +94,20 @@
         </section>
     
         <section class="fourth-advantage">
-          <div>
+          <div class="area">
             <h2>Небольшая площадь</h2>
             <span class="number">№3</span>
             <p>Все достопримечательности 
               находятся близко</p>
             </div>
     
-            <div>
+            <div class="road">
               <h2>Красивая дорога</h2>
               <span class="number">№4</span>
               <p>Ехать в Седону из Лас-вегаса совсем 
                 не скучно!</p>
             </div>
-            <div>
+            <div class="tourists">
             <h2> Мало туристов</h2>
             <span class="number">№5</span>
             <p>Большинство едет в гранд-каньон 
@@ -123,11 +123,11 @@
           </p>
         </div>
         <section class="search">
-            <button class="search-button" type="button">
-              <h2 class="title-search"> Поиск гостиницы в Седоне</h2>
-            </button>
             <form class="form" class="modal-show" method="post" action="https://echo.htmlacademy.ru">
-              <div class="group-of-forms">
+              <button class="search-button" type="button">
+                <h2 class="title-search"> Поиск гостиницы в Седоне</h2>
+              </button>
+              <div class="group-of-forms group-of-forms-hidden">
                 <div class="arrival-date">
                   <label class="label-date" for="arrival-date">Дата заезда:</label>
                   <input class="input-date" id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
@@ -158,7 +158,7 @@
               </div>
             </form>
           </section>
-        <div>
+        <div class="map-wrapper">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995065.9122608851!2d-112.42935560283112!3d34.99307583741225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1571361049172!5m2!1sru!2sru" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           </div>
       </main>
@@ -185,13 +185,19 @@
 
 
 
-    var link = document.querySelector(".search");
-    var popup = document.querySelector(".form");
+    var serchButton = document.querySelector(".search-button");
+    var popup = document.querySelector(".group-of-forms");
 
-link.addEventListener("click", function (evt) {
+serchButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-show");
 
+  if (popup.classList.contains("group-of-forms-hidden")) {
+    popup.classList.remove("group-of-forms-hidden");
+    popup.classList.add("group-of-forms-show");
+  } else if (popup.classList.contains('group-of-forms-show')) {
+    popup.classList.remove('group-of-forms-show');
+    popup.classList.add("group-of-forms-hidden");
+  }
 });
 
 
