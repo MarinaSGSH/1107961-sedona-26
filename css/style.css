@@ -830,3 +830,35 @@ a .title-name:active {
   margin-top: 86px;
   height: 460px;
 }
+.check {
+	padding-left: 30px;
+
+}
+
+.check-input {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	position: absolute;
+}
+
+.check-box {
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	margin-left: -30px;
+}
+
+.check-input:checked + .check-box {
+	background-image: url(../img/checkbox-on.svg);
+}
+
+.check-input:disabled + .check-box {
+	background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+.check-input:checked:disabled + .check-box {
+	background-image: url(../img/checkbox-on-disabled.svg);
+}
