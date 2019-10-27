@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -30,8 +30,8 @@
           <span class="infrastructure-title">Инфраструктура</span>
           <ul>
             <li class="li-2"><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Бассейн</label></li>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox" disabled> <span class="check-box"></span>Парковка</label></li>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox" checked disabled><span class="check-box"></span>WI-FI</label></li>
+            <li class="li-2"><label class="check"><input class="check-input" type="checkbox"> <span class="check-box"></span>Парковка</label></li>
+            <li class="li-2"><label class="check"><input class="check-input" type="checkbox"><span class="check-box"></span>WI-FI</label></li>
           </ul>
         </div>
         <div class="infrastructure-wraper">
@@ -44,10 +44,19 @@
         </div>
         </div>
 <div class="infrastructure">
-<h2>Стоимость в сутки (р):<h2>
+<h2>Стоимость в сутки (р):</h2>
   <span> от 0 </span>
   <span> до 3000 </span>
-  <span></span>
+
+<div class="slider">
+  <div class="slider-background">
+     <span class="slider-button slider-button-left"></span> <div class="slider-background-active"></div> <span class="slider-button slider-button-right"></span>
+
+ </div>
+</div>
+
+
+
   <button class="show" type="button" aria-label="Показать"></button>
 </div>
         </section>
