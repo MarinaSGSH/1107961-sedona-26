@@ -176,9 +176,17 @@ a {
 }
 
 .title-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000000;
+  font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 0px;
+}
+
+.rating-star {
+display: flex;
+margin-right: 0px;
+list-style: none;
+margin-left: auto;
 }
 
 .contacts-list li {
@@ -272,6 +280,7 @@ a {
 }
 
 .li-item {
+  display: flex;
   position: relative;
   border-bottom: 1px solid #ececec;
   padding: 30px 0;
@@ -795,34 +804,45 @@ a .title-name:active {
 .filter {
   background-image: url(../img/filter-background.jpg);
   background-repeat: no-repeat;
+  background-position: 0 -55px;
   width: 100%;
-  padding: 31px 73px;
   display: flex;
 }
 
 .infrastructure {
   display: flex;
-  flex-grow: 1;
   color: #ffffff;
-
+  padding: 30px 0 36px 73px;
 }
 
 
 
 .infrastructure ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
-.infrastructure-wraper {
-  width: 50%;
+.infrastructure ul li {
+  margin: 31px 0 0 38px;
 }
 
-.li-2 {
-  margin-top: 35px;
-  margin-bottom: 35px;
+.infrastructure ul li:nth-child(3n+3) {
+  margin-top: 33px;
+}
+
+.infrastructure ul li:nth-child(3n+3) .check-box {
+  margin-top: -5px;
 }
 
 .infrastructure-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: -2px;
+  letter-spacing: 0.19px;
+}
+
+.infrastructure-title-2 {
   font-size: 16px;
   font-weight: bold;
 }
@@ -830,10 +850,6 @@ a .title-name:active {
 .map-wrapper {
   margin-top: 86px;
   height: 460px;
-}
-.check {
-	padding-left: 30px;
-
 }
 
 .check-input {
@@ -849,7 +865,8 @@ a .title-name:active {
 	height: 23px;
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
-	margin-left: -30px;
+  margin-left: -38px;
+  margin-top: -3px;
 }
 
 .check-input:checked + .check-box {
@@ -862,6 +879,64 @@ a .title-name:active {
 
 .check-input:checked:disabled + .check-box {
 	background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.infrastructure-wraper-2 {
+  margin-left: 119px;
+}
+
+.infrastructure-wraper-2 .check {
+  margin-left: 3px;
+}
+
+.infrastructure-wraper-2 .check-box {
+  margin-left: -41px;
+}
+
+.slider-wrapper {
+  margin-left: auto;
+  padding-top: 30px;
+  margin-right: 71px;
+}
+
+.slider-title {
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.slider-price-between {
+  display: flex;
+  width: 315px;
+  color: #fff;
+  margin-top: 14px;
+  font-size: 14px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.price-min, .price-max {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 9px;
+  width: 50%;
+}
+
+.price-min {
+  position: relative;
+}
+
+.price-min::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  right: 0;
+  background-color: #fff;
 }
 
 .slider {
@@ -880,7 +955,7 @@ a .title-name:active {
 .slider-background-active {
 position: absolute;
 height: 100%;
-width: 60%;
+width: 79%;
 z-index: 1;
 left: 0;
 top: 0;
@@ -897,5 +972,109 @@ background-color: #fff;
 }
 
 .slider-button-right {
-  left: 60%;
+  left: 79%;
+}
+
+.button-show {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  margin-left: 85px;
+  margin-top: 12px;
+  border: 2px solid #fff;
+  outline: none;
+  text-transform: uppercase;
+  color: #fff;
+  width: 137px;
+  height: 36px;
+}
+
+.filter-sort-wrapper {
+  display: flex;
+  padding: 35px 71px;
+}
+
+.filter-result-counter {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.sort-text {
+  margin-left: 48px;
+  font-size: 11px;
+  margin-top: 2px;
+  font-weight: bold;
+  letter-spacing: .7px;
+}
+
+.sort-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+  margin-left: 39px;
+  letter-spacing: .6px;
+  margin-top: 2px;
+  color: #b1b1b1;
+}
+
+.sort-link:hover, .sort-link.active:hover {
+  color: #81b3d2;
+}
+
+.sort-link:active, .sort-link.active:active {
+  color: #000;
+  border-color: #000;
+  border-bottom: none;
+}
+
+.sort-item:not(:first-child) {
+  margin-left: 32px;
+}
+
+.sort-link {
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-link.active {
+  color: #81b3d2;
+}
+
+.sort-order {
+  position: relative;
+  margin-left: auto;
+  width: 35px;
+}
+
+.icon-order-asc, .icon-order-desc {
+  position: absolute;
+}
+
+.icon-order-asc, .icon-order-desc {
+  position: absolute;
+  fill: #cacaca;
+}
+
+.icon-order-asc:hover, .icon-order-desc:hover {
+  fill: #231f20;
+}
+
+.icon-order-asc:active, .icon-order-desc:active, .icon-order-asc.active, .icon-order-desc.active {
+  fill: #81b3d2;
+}
+
+.icon-order-asc {
+  top: 4px;
+  left: -1px;
+}
+
+.icon-order-desc {
+  right: 3px;
+  top: 3px;
+  transform: rotate(180deg);
 }

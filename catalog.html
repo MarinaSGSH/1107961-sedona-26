@@ -27,26 +27,28 @@
       <section class="filter">
         <div class="infrastructure"> 
           <div class="infrastructure-wraper">
-          <span class="infrastructure-title">Инфраструктура</span>
+          <span class="infrastructure-title">Инфраструктура:</span>
           <ul>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Бассейн</label></li>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox"> <span class="check-box"></span>Парковка</label></li>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox"><span class="check-box"></span>WI-FI</label></li>
+            <li><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Бассейн</label></li>
+            <li><label class="check"><input class="check-input" type="checkbox"> <span class="check-box"></span>Парковка</label></li>
+            <li><label class="check"><input class="check-input" type="checkbox"><span class="check-box"></span>WI-FI</label></li>
           </ul>
         </div>
-        <div class="infrastructure-wraper">
-        <span class="infrastructure-title">Тип жилья</span>
+        <div class="infrastructure-wraper-2">
+        <span class="infrastructure-title-2">Тип жилья:</span>
         <ul>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Гостиница</label></li>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Мотель</label></li>
-            <li class="li-2"><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Апартаменты</label></li>
+            <li><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Гостиница</label></li>
+            <li><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Мотель</label></li>
+            <li><label class="check"><input class="check-input" type="checkbox" checked><span class="check-box"></span>Апартаменты</label></li>
           </ul>
         </div>
         </div>
-<div class="infrastructure">
-<h2>Стоимость в сутки (р):</h2>
-  <span> от 0 </span>
-  <span> до 3000 </span>
+<div class="slider-wrapper">
+<h2 class="slider-title">Стоимость в сутки (р):</h2>
+<div class="slider-price-between">
+    <span class="price-min"> от 0 </span>
+    <span class="price-max"> до 3000 </span>
+</div>
 
 <div class="slider">
   <div class="slider-background">
@@ -57,9 +59,23 @@
 
 
 
-  <button class="show" type="button" aria-label="Показать"></button>
+  <button class="button-show" type="button">Показать</button>
 </div>
-        </section>
+</section>
+<section class="filter-sort-wrapper">
+  <span class="filter-result-counter">Найдено: 3</span>
+  <span class="sort-text">Сортировка:</span>
+  <ul class="sort-list">
+    <li class="sort-item"><a href="#" class="sort-link active">По цене</a></li>
+    <li class="sort-item"><a href="#" class="sort-link">По типу</a></li>
+    <li class="sort-item"><a href="#" class="sort-link">По рейтингу</a></li>
+  </ul>
+  <div class="sort-order">
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="icon-order-asc"><path d="M5.5 0L0 10h11z"/></svg></a>
+    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" class="icon-order-desc active"><path d="M5.5 0L0 10h11z"/></svg></a>
+  </div>
+</section>
+
     <section class="item-hotels">
       <ul class="list-hotel-description">
         <li class="li-item">
@@ -73,6 +89,12 @@
             <a class="link-book" href="#">Забронировать</a>
             <span class="rating">Рейтинг: 8,5</span>
           </div>
+          <ul class="rating-star">
+              <li> <img src="img/star.svg"></li>
+              <li> <img src="img/star.svg"></li>
+              <li> <img src="img/star.svg"></li>
+              <li> <img src="img/star.svg"></li>
+              </ul>
         </li>
         <li class="li-item">
           <img class="hotel-img" src="img/desert.jpg" width="135" height="90" alt="Desert quail inn">
@@ -85,6 +107,11 @@
             <a class="link-book" href="#">Забронировать</a>
             <span class="rating">Рейтинг: 8,9</span>
           </div>
+          <ul class="rating-star">
+              <li> <img src="img/star.svg"></li>
+              <li> <img src="img/star.svg"></li>
+              <li> <img src="img/star.svg"></li>
+              </ul>
         </li>
         <li class="li-item">
           <img class="hotel-img" src="img/villast.jpg" width="135" height="90" alt="Villas at poco diablo">
@@ -97,6 +124,10 @@
             <a class="link-book" href="#">Забронировать</a>
             <span class="rating">Рейтинг: 9,2</span>
           </div>
+          <ul class="rating-star">
+              <li> <img src="img/star.svg"></li>
+              <li> <img src="img/star.svg"></li>
+              </ul>
         </li>
       </ul>
     </section>
