@@ -115,40 +115,42 @@
         </p>
       </div>
       <section class="search">
-        <form class="form modal-show" method="post" action="https://echo.htmlacademy.ru">
-          <button class="search-button" type="button">
-            <span class="title-search"> Поиск гостиницы в Седоне</span>
-          </button>
-          <div class="group-of-forms group-of-forms-hidden">
-            <div class="arrival-date">
-              <label class="label-date" for="arrival-date">Дата заезда:</label>
-              <input class="input-date" id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
-            </div>
-            <div class="date-of-departure">
-              <label class="label-date" for="date-of-departure">Дата выезда:</label>
-              <input class="input-date" id="date-of-departure" type="text" name="data" placeholder="4 июля 2017">
-            </div>
-            <div class="adults-children">
-              <div class="adults">
-                <label class="label-date" for="adults">Взрослые:</label>
-                <div class="quantity-counter">
-                  <button class="minus" type="button" aria-label="Убрать"></button>
-                  <input id="adults" type="text" name="quantity-adults" placeholder="2">
-                  <button class="plus" type="button" aria-label="Добавить"></button>
+        <div class="ie-rip">
+          <form class="form modal-show" method="post" action="https://echo.htmlacademy.ru">
+            <button class="search-button" type="button">
+              <span class="title-search"> Поиск гостиницы в Седоне</span>
+            </button>
+            <div class="group-of-forms group-of-forms-hidden">
+              <div class="arrival-date">
+                <label class="label-date" for="arrival-date">Дата заезда:</label>
+                <input class="input-date" id="arrival-date" type="text" name="data" placeholder="24 апреля 2017">
+              </div>
+              <div class="date-of-departure">
+                <label class="label-date" for="date-of-departure">Дата выезда:</label>
+                <input class="input-date" id="date-of-departure" type="text" name="data" placeholder="4 июля 2017">
+              </div>
+              <div class="adults-children">
+                <div class="adults">
+                  <label class="label-date" for="adults">Взрослые:</label>
+                  <div class="quantity-counter">
+                    <button class="minus" type="button" aria-label="Убрать"></button>
+                    <input id="adults" type="text" name="quantity-adults" placeholder="2">
+                    <button class="plus" type="button" aria-label="Добавить"></button>
+                  </div>
+                </div>
+                <div class="children">
+                  <label for="children">Дети:</label>
+                  <div class="quantity-counter">
+                    <button class="minus" type="button" aria-label="Убрать"></button>
+                    <input id="children" type="text" name="quantity-children" placeholder="0">
+                    <button class="plus" type="button" aria-label="Добавить"></button>
+                  </div>
                 </div>
               </div>
-              <div class="children">
-                <label for="children">Дети:</label>
-                <div class="quantity-counter">
-                  <button class="minus" type="button" aria-label="Убрать"></button>
-                  <input id="children" type="text" name="quantity-children" placeholder="0">
-                  <button class="plus" type="button" aria-label="Добавить"></button>
-                </div>
-              </div>
+              <button class="button-type-submit" type="submit">Найти</button>
             </div>
-            <button class="button-type-submit" type="submit">Найти</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
       <div class="map-wrapper">
         <iframe class="iframe-map"
