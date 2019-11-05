@@ -682,12 +682,6 @@ a .title-name:active {
 }
 
 .housing {
-  /* background-image: url(../img/icon-1.svg);
-  background-repeat: no-repeat;
-  background-position: 44% 24%;
-  padding-top: 107px;
-  padding-left: 112px;
-  width: 400px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -705,9 +699,6 @@ a .title-name:active {
 }
 
 .housing p {
-  /* line-height: 1.5;
-  margin-top: -34px;
-  margin-left: -40px; */
   margin: 0;
   width: 255px;
   letter-spacing: 0.06px;
@@ -715,12 +706,6 @@ a .title-name:active {
 }
 
 .food {
-  /* background-image: url(../img/icon-3.svg);
-  background-repeat: no-repeat;
-  background-position: 34% 24%;
-  width: 400px;
-  padding-left: 140px;
-  padding-top: 107px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -730,9 +715,7 @@ a .title-name:active {
 }
 
 .food p {
-  /* margin-left: -75px;
-  margin-top: -34px;
-  line-height: 1.5; */
+
   width: 290px;
   letter-spacing: 0.06px;
   line-height: 1.5;
@@ -740,11 +723,6 @@ a .title-name:active {
 }
 
 .souvenir {
-  /* background-image: url(../img/icon-2.svg);
-  background-repeat: no-repeat;
-  width: 400px;
-  padding-top: 107px;
-  padding-left: 97px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -813,7 +791,7 @@ a .title-name:active {
 }
 
 .third-text {
-  padding-top: 0px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1049,9 +1027,7 @@ background-color: #fff;
 
 .button-show {
   padding: 0;
-  border: none;
   font: inherit;
-  color: inherit;
   background-color: transparent;
   cursor: pointer;
   display: block;
@@ -1164,8 +1140,8 @@ background-color: #fff;
   transform: rotate(180deg);
 }
 
-.iframe-map { 
-  border: none; 
+.iframe-map {
+  border: none;
 }
 
 .ie-rip {
